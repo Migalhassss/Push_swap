@@ -6,11 +6,11 @@
 /*   By: micarrel <micarrel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/20 16:27:03 by micarrel          #+#    #+#             */
-/*   Updated: 2023/01/23 11:07:16 by micarrel         ###   ########.fr       */
+/*   Updated: 2023/01/26 10:48:41 by micarrel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../push_swap.h"
 
 static void	push(t_stack **list_a, t_stack **list_b)
 {

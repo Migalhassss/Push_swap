@@ -6,11 +6,11 @@
 /*   By: micarrel <micarrel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/12 12:57:15 by micarrel          #+#    #+#             */
-/*   Updated: 2023/01/20 16:02:03 by micarrel         ###   ########.fr       */
+/*   Updated: 2023/01/26 10:52:24 by micarrel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../push_swap.h"
 
 int	ft_sorted(t_stack **list)
 {
@@ -55,6 +55,7 @@ int	order(t_stack **list, int size)
 	return (0);
 }
 
+
 void	index_reset(t_stack **list)
 {
 	t_stack	*lst;
@@ -90,6 +91,6 @@ void	rotate_to_first(t_stack **lst, int size)
 		{
 			ft_printf("ra\n");
 			i--;
-		}		
+		}
 	}
 }

@@ -15,12 +15,12 @@ NAME	=	push_swap
 FILES	=	check_numbers.c\
 			lst_functions.c\
 			index.c\
-			easy_sort.c\
-			easy_sort_utils.c\
-			swap.c\
-			push.c\
-			reverse.c\
-			rotate.c\
+			./Simple_sort/easy_sort.c\
+			./Simple_sort/easy_sort_utils.c\
+			./Operations/swap.c\
+			./Operations/push.c\
+			./Operations/reverse.c\
+			./Operations/rotate.c\
 			sort.c\
 			push_swap.c\
 

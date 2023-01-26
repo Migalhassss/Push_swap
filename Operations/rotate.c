@@ -6,11 +6,11 @@
 /*   By: micarrel <micarrel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/20 10:22:15 by micarrel          #+#    #+#             */
-/*   Updated: 2023/01/23 11:52:51 by micarrel         ###   ########.fr       */
+/*   Updated: 2023/01/26 10:48:51 by micarrel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../push_swap.h"
 
 void	rotate(t_stack **list)
 {

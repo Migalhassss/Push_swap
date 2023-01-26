@@ -75,4 +75,14 @@ void	lst_addfront(t_stack **list, t_stack *news)
 	if (!list || !news)
 		return ;
 	if (!(*list))
+	{
+		*list = news;
+		(*list)->prev = NULL;
+		(*list)->next = NULL;
+		return ;
+	}
+	(*list)->prev = news;
+	news->next = *list;
+	*list = news;
+	news->prev = NULL;
 }

@@ -74,35 +74,36 @@ void	printlist(t_stack *head)
 	i = 0;
 	while (temporary != NULL)
 	{
-		printf("| Node N°%d|>>>>>>>>>>>>>>>>>>>>>> %d |\n", i, temporary->content);
+		ft_printf("| Node N°%d|>>>>>>>>>>>>>>>>>>>>>> %d |\n", i, temporary->index);
 		temporary = temporary->next;
 		i++;
 	}
-	printf("\n");
+	ft_printf("\n");
 }
 int	main(int argc, char **argv)
 {
 	t_stack	*list_a;
 	t_stack	*list_b;
 	if (argc == 1)
-		return (printf("Error\n"));
+		return (ft_printf("Error\n"));
 	else if (ftisdigit(argv) == 0)
-		return (printf("Error\n"));
+		return (ft_printf("Error\n"));
 	list_a = NULL;
 	list_b = NULL;
 	plswork(argc, argv, &list_a);
 	if (check_doubles(list_a) == 0)
-		return (printf("Error\n"));
+		return (ft_printf("Error\n"));
 	get_index(&list_a);
 	if (ft_sorted(&list_a) != 1)
 	{
 		if (size_list(list_a) <= 5)
+		{
 			easy_sort(&list_a, &list_b);
+		}
 		else
-			printf("Nop!");
-		//radix(&list_a, &list_b);
+			sort(&list_a, &list_b, size_list(list_a));
 	}
-	//printlist(list_a);
+	printlist(list_b);
 
 	free_list(&list_a);
 	free_list(&list_b);

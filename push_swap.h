@@ -44,12 +44,17 @@ void	get_index(t_stack **list);
 
 void	easy_sort(t_stack **list_a, t_stack **list_b);
 
+void	sort(t_stack **list_a, t_stack **list_b, int size);
+void	sort_25(t_stack **list_a, t_stack **list_b);
+int  ftcheck(t_stack *list, int ind);
+
 int size_list(t_stack *list);
 int	ft_sorted(t_stack **list);
 int	order(t_stack **list, int size);
 void	index_reset(t_stack **list);
 void	rotate_to_first(t_stack **lst, int size);
 t_stack	*list_last(t_stack *list);
+void	lst_addfront(t_stack **list, t_stack *news);
 
 void	rotate(t_stack **stack);
 void	reverse(t_stack **stack);

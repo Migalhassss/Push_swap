@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: tmiguel- <tmiguel-@student.42.fr>          +#+  +:+       +#+         #
+#    By: micarrel <micarrel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/01/18 14:24:50 by tmiguel-          #+#    #+#              #
-#    Updated: 2023/01/18 14:24:50 by tmiguel-         ###   ########.fr        #
+#    Created: 2022/11/09 12:03:58 by micarrel          #+#    #+#              #
+#    Updated: 2022/11/09 12:03:58 by micarrel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,7 @@ RM	= rm -f
 
 CC	= gcc
 
-CFLAGS	= -Wall -Wextra -Werror
+CFLAGS	= -Wall -Wextra -Werror -I.
 
 all:	$(NAME)
 
@@ -35,4 +35,4 @@ clean:
 fclean:		clean
 		$(RM) $(NAME)
 
-re:		fclean all 
+re:		fclean all

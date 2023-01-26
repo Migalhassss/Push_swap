@@ -6,11 +6,11 @@
 /*   By: micarrel <micarrel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/12 12:55:35 by micarrel          #+#    #+#             */
-/*   Updated: 2023/01/20 16:24:38 by micarrel         ###   ########.fr       */
+/*   Updated: 2023/01/26 10:48:54 by micarrel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "../push_swap.h"
 
 static void	swap (t_stack **lst)
 {
