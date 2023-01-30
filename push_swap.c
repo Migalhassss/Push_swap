@@ -74,12 +74,13 @@ void	printlist(t_stack *head)
 	i = 0;
 	while (temporary != NULL)
 	{
-		ft_printf("| Node N°%d|>>>>>>>>>>>>>>>>>>>>>> %d |\n", i, temporary->index);
+		ft_printf("| Node N°%d|>>>>>>>>>>>>>>>>>>>>>> index | %d | content | %d | |\n", i, temporary->index, temporary->content);
 		temporary = temporary->next;
 		i++;
 	}
 	ft_printf("\n");
 }
+
 int	main(int argc, char **argv)
 {
 	t_stack	*list_a;
@@ -101,9 +102,9 @@ int	main(int argc, char **argv)
 			easy_sort(&list_a, &list_b);
 		}
 		else
-			sort(&list_a, &list_b, size_list(list_a));
+			sort2(&list_a, &list_b, size_list(list_a));
 	}
-	printlist(list_b);
+	//printlist(list_b);
 
 	free_list(&list_a);
 	free_list(&list_b);

@@ -6,7 +6,7 @@
 /*   By: micarrel <micarrel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/20 16:27:03 by micarrel          #+#    #+#             */
-/*   Updated: 2023/01/26 10:48:41 by micarrel         ###   ########.fr       */
+/*   Updated: 2023/01/30 14:01:08 by micarrel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ static void	push(t_stack **list_a, t_stack **list_b)
 {
 	t_stack	*tmp;
 
-	if(!list_b)
+	if(!list_b || !(*list_b))
 		return ;
 	tmp = (*list_b)->next;
 	lst_addfront(list_a, *list_b);

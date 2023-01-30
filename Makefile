@@ -21,7 +21,7 @@ FILES	=	check_numbers.c\
 			./Operations/push.c\
 			./Operations/reverse.c\
 			./Operations/rotate.c\
-			sort.c\
+			sort2.c\
 			push_swap.c\
 
 OBJS	=	$(FILES:.c=.o)
