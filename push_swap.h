@@ -85,14 +85,14 @@ void			fun_pb(t_stack **list_b, t_stack **list_a);
 
 //========================SORT 100========================|;
 //void	sort(t_stack **list_a, t_stack **list_b, int size);
-void	sort2(t_stack **list_a, t_stack **list_b, int size);
-void	ft_check_index_1(t_stack **list_a, t_stack **list_b, int start, int end);
-void	ft_check_index_aux(t_stack **list_a, int index, int where);
+void			sort2(t_stack **list_a, t_stack **list_b, int size);
+void			ft_check_index(t_stack **list_a, t_stack **list_b, int end);
+void			ft_check_index_aux(t_stack **list_a, int where);
 
-void sort_25(t_stack **list_a, t_stack **list_b);
-int	is_sorted(t_stack **list);
-int	check_cust(int index, int size);
-int	min_cust(int index, int size);
+void 			sort_25(t_stack **list_a, t_stack **list_b);
+int				is_sorted(t_stack **list);
+int				check_cust(int index, int size);
+int				min_cust(int index, int size);
 int  ftcheck(t_stack *list, int ind);
 //========================================================|;
 

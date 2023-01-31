@@ -68,17 +68,18 @@ static int plswork(int argc, char **argv, t_stack **list_a)
 
 void	printlist(t_stack *head)
 {
-	t_stack *temporary = head;
-	int i;
-
+	t_stack	*temporary;
+	int		i;
 	i = 0;
+	temporary = head;
 	while (temporary != NULL)
 	{
-		ft_printf("| Node N°%d|>>>>>>>>>>>>>>>>>>>>>> index | %d | content | %d | |\n", i, temporary->index, temporary->content);
+		ft_printf("\033[38;5;76mNode N°%d|", i);
+		ft_printf("\033[38;5;226m	INDEX >> |%d|	\033[00m", temporary->index);
+		ft_printf("&  \033[38;5;99m|%d| << CONTENT\033[00m\n", temporary->content);
 		temporary = temporary->next;
 		i++;
 	}
-	ft_printf("\n");
 }
 
 int	main(int argc, char **argv)

@@ -30,7 +30,7 @@ RM	= rm -f
 
 CC	= gcc
 
-CFLAGS	= -Wall -Wextra -Werror
+CFLAGS	= -Wall -Wextra -Werror -fsanitize=address -g
 
 PRINT_PATH	= ./ft_printf --no-print-directory
 PRINT_NAME	= ./ft_printf/libftprintf.a

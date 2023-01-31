@@ -6,7 +6,7 @@
 /*   By: micarrel <micarrel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/12 12:57:15 by micarrel          #+#    #+#             */
-/*   Updated: 2023/01/26 10:52:24 by micarrel         ###   ########.fr       */
+/*   Updated: 2023/01/31 12:00:35 by micarrel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ int	ft_sorted(t_stack **list)
 {
 	t_stack	*tmp;
 
+	if (!*list)
+		return (0);
 	tmp = *list;
 	while (tmp->next)
 	{
