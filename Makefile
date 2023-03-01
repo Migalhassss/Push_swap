@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: micarrel <micarrel@student.42.fr>          +#+  +:+       +#+         #
+#    By: tmiguel- <tmiguel-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/01/20 11:37:30 by micarrel          #+#    #+#              #
-#    Updated: 2023/01/20 11:37:30 by micarrel         ###   ########.fr        #
+#    Created: 2023/02/27 12:17:02 by tmiguel-          #+#    #+#              #
+#    Updated: 2023/02/27 12:17:02 by tmiguel-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,7 +46,7 @@ RM	= rm -f
 
 CC	= gcc
 
-CFLAGS	= -Wall -Wextra -Werror
+CFLAGS	= -Wall -Wextra -Werror 
 
 PRINT_PATH	= ./ft_printf --no-print-directory
 PRINT_NAME	= ./ft_printf/libftprintf.a

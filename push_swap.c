@@ -35,6 +35,9 @@ static int	check_doubles(t_stack *list)
 			clone = clone->next;
 			if (clone->content == tmp)
 				return (0);
+			else if (clone->content > 2147483647
+				|| clone->content < -2147483647)
+				return (0);
 		}
 		list = list->next;
 	}
@@ -82,25 +85,25 @@ int	main(int argc, char **argv)
 	t_stack	*list_b;
 
 	if (argc == 1)
-		return (ft_printf("Error\n"));
-	else if (ftisdigit(argv) == 0)
+		return (0);
+	if (ftisdigit(argv) == 0)
 		return (ft_printf("Error\n"));
 	list_a = NULL;
 	list_b = NULL;
 	plswork(argc, argv, &list_a);
 	if (check_doubles(list_a) == 0)
+	{
+		free_list(&list_a);
 		return (ft_printf("Error\n"));
+	}
 	get_index(&list_a);
 	if (ft_sorted(&list_a) != 1)
 	{
 		if (size_list(list_a) <= 5)
 			easy_sort(&list_a, &list_b);
 		else
-		{
 			witch_case(&list_a, &list_b);
-		}
 	}
 	free_list(&list_a);
 	free_list(&list_b);
-	return (0);
 }

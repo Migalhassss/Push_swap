@@ -27,18 +27,3 @@ int	do_arr2(t_stack *b, int *num)
 	}
 	return (*num);
 }
-
-int	numb_amo(t_stack **a)
-{
-	t_stack	*b;
-	int		i;
-
-	i = 0;
-	b = *a;
-	while (b->next != NULL)
-	{
-		b = b->next;
-		i++;
-	}
-	return (i);
-}

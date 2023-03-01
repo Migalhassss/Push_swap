@@ -1,36 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   check_numbers.c                                    :+:      :+:    :+:   */
+/*   ft_words.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: micarrel <micarrel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/20 11:37:19 by micarrel          #+#    #+#             */
-/*   Updated: 2023/01/20 11:37:19 by micarrel         ###   ########.fr       */
+/*   Created: 2022/11/09 17:58:49 by micarrel          #+#    #+#             */
+/*   Updated: 2022/11/09 17:58:49 by micarrel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "ft_printf.h"
 
-int	ftisdigit(char **argv)
+void	ft_putchar(char chr, int *len)
 {
-	int	i;
-	int	j;
+	write(1, &chr, 1);
+	(*len)++;
+}
 
-	i = 1;
-	while (argv[i] != NULL)
+void	ft_putstr(char *args, int *len)
+{
+	size_t	i;
+
+	i = 0;
+	if (args == 0)
 	{
-		j = 0;
-		while (argv[i][j] != '\0')
-		{
-			if (ft_isdigit(argv[i][j]) == 1)
-				j++;
-			else if (argv[i][j] == '-' || argv[i][j] == ' ')
-				j++;
-			else
-				return (0);
-		}
+		write(2, "(null)", 6);
+		(*len) += 6;
+		return ;
+	}
+	while (args[i] != '\0')
+	{
+		ft_putchar(args[i], len);
 		i++;
 	}
-	return (1);
 }
