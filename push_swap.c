@@ -35,9 +35,6 @@ static int	check_doubles(t_stack *list)
 			clone = clone->next;
 			if (clone->content == tmp)
 				return (0);
-			else if (clone->content > 2147483647
-				|| clone->content < -2147483647)
-				return (0);
 		}
 		list = list->next;
 	}
@@ -57,6 +54,12 @@ static int	plswork(int argc, char **argv, t_stack **list_a)
 		split = ft_split(argv[j], ' ');
 		if (!split[i])
 			return (0);
+		if (ft_atoi(split[i]) == -1)
+		{
+			free_split(split);
+			ft_printf("Error\n");
+			exit(1);
+		}
 		while (split[i])
 		{
 			ftlstadd_back(list_a, new_list(ft_atoi(split[i])));
