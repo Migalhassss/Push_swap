@@ -69,13 +69,7 @@ The grade depends on how efficient the program's sorting process is.
         ```bash
         make
         ```
-
-    - To build with a specific configuration (e.g., debugging symbols):
-
-        ```bash
-        make debug
-        ```
-
+        
     - To clean up object files and executables:
 
         ```bash
