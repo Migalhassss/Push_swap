@@ -9,8 +9,8 @@ This repository contains the source code for the `push_swap` program, along with
 ## Table of Contents
 
 - [Features](#features)
-- [Usage](#usage)
 - [Introduction](#introduction)
+- [Usage](#usage)
 - [Building and Running Push_swap](#building-and-running-push_swap)
 - [Example Usage](#example-usage)
 - [Acknowledgments](#acknowledgments)
